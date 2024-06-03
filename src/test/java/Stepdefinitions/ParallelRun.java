@@ -1,4 +1,4 @@
-package parallel;
+package Stepdefinitions;
 
 import org.testng.annotations.DataProvider;
 

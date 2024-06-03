@@ -51,28 +51,32 @@
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
-			<version>3.141.59</version>
+			<version>4.21.0</version>
 		</dependency>
+
 
 		<dependency>
 			<groupId>io.github.bonigarcia</groupId>
 			<artifactId>webdrivermanager</artifactId>
-			<version>4.2.2</version>
+			<version>5.8.0</version>
 		</dependency>
 
+		<!--
+		https://mvnrepository.com/artifact/tech.grasshopper/extentreports-cucumber7-adapter -->
 		<dependency>
 			<groupId>tech.grasshopper</groupId>
-			<artifactId>extentreports-cucumber6-adapter</artifactId>
-			<version>2.8.0</version>
-			<scope>test</scope>
+			<artifactId>extentreports-cucumber7-adapter</artifactId>
+			<version>1.14.0</version>
 		</dependency>
 
+		<!-- https://mvnrepository.com/artifact/org.testng/testng -->
 		<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
-			<version>6.14.3</version>
+			<version>7.10.2</version>
 			<scope>test</scope>
 		</dependency>
+
 
 		<dependency>
 			<groupId>io.cucumber</groupId>
@@ -96,7 +100,11 @@
 		</dependency>
 
 
-
+		<dependency>
+			<groupId>Selenium</groupId>
+			<artifactId>Selenium</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -127,16 +135,23 @@
 				</configuration>
 			</plugin>
 
-			<!-- <plugin> <groupId>org.apache.maven.plugins</groupId> <artifactId>maven-failsafe-plugin</artifactId> 
-				<version>3.0.0-M3</version> <executions> <execution> <goals> <goal>integration-test</goal> 
-				</goals> <configuration> UNCOMMENT - To add any exclusions if required <excludes> 
+			<!-- <plugin> <groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-failsafe-plugin</artifactId> 
+				<version>3.0.0-M3</version> <executions> <execution> <goals>
+			<goal>integration-test</goal> 
+				</goals> <configuration> UNCOMMENT - To add any exclusions if required
+			<excludes> 
 				<exclude>**/*IT*.java</exclude> </excludes> <includes> UNCOMMENT BELOW LINE 
-				- To execute feature files with a single runner <include>**/MyTestRunner.java</include> 
-				UNCOMMENT BELOW LINE - To execute feature files with multiple runners <include>**/*Runner.java</include> 
+				- To execute feature files with a single runner
+			<include>**/MyTestRunner.java</include> 
+				UNCOMMENT BELOW LINE - To execute feature files with multiple runners
+			<include>**/*Runner.java</include> 
 				</includes> UNCOMMENT BELOW 3 LINES - To execute using parallel or combination 
-				option <parallel>methods</parallel> <threadCount>4</threadCount> <perCoreThreadCount>true</perCoreThreadCount> 
+				option <parallel>methods</parallel> <threadCount>4</threadCount>
+			<perCoreThreadCount>true</perCoreThreadCount> 
 				UNCOMMENT BELOW 3 LINES - To execute using forking or combination option 
-				<forkCount>2</forkCount> <reuseForks>true</reuseForks> <reportsDirectory>${project.build.directory}/failsafe-reports_${surefire.forkNumber}</reportsDirectory> 
+				<forkCount>2</forkCount> <reuseForks>true</reuseForks>
+			<reportsDirectory>${project.build.directory}/failsafe-reports_${surefire.forkNumber}</reportsDirectory> 
 				</configuration> </execution> </executions> </plugin> -->
 
 
