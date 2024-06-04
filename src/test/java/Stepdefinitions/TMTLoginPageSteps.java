@@ -12,18 +12,41 @@ import com.qa.factory.DriverFactory;
 
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 
 public class TMTLoginPageSteps {
 	
 	TMTLoginPage loginpage = new TMTLoginPage(DriverFactory.getDriver());
 	
 	WebDriver driver;
+	private static String title;
 	
-	@Given("Select City")
-	public void user_Select_the_City() {
+	@Given("Login to TMT Portal")
+	public void Logintoportal() {
 		loginpage.SelectCity();
-		
-		
+//		loginpage.loginpagestep();
+			
+	}
+	
+	@When("user gets the title of the page")
+	public void user_gets_the_title_of_the_page() {
+	 title = loginpage.getLoginPageTitle();
+		System.out.println("Page title is: " + title);
+	}
+
+	@Then("Page title should be {string}")
+	public void page_title_should_be(String expectedTitleName) {
+		Assert.assertTrue(title.contains(expectedTitleName));
+	}
+
+	
+	@When("Updating My profile page")
+	public void Profile_Update() {
+	
+		loginpage.Profileupdate();
+		loginpage.usernameandprofilepicupdate();
+			
 	}
 	
 
