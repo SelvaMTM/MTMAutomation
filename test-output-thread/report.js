@@ -1,15 +1,15 @@
 $(document).ready(function() {
 CucumberHTML.timelineItems.pushArray([
   {
-    "id": "9491b85f-14e7-43f8-a381-1ec86febb964",
+    "id": "56168994-25dc-4b76-af61-f22717287236",
     "feature": "TakeMyTicketsLogin",
     "scenario": "TakeMyTicketsLogin",
-    "start": 1717404767761,
+    "start": 1718858588250,
     "group": 1,
     "content": "",
-    "tags": "",
-    "end": 1717404800398,
-    "className": "passed"
+    "tags": "@test,",
+    "end": 1718858664218,
+    "className": "failed"
   }
 ]);
 CucumberHTML.timelineGroups.pushArray([

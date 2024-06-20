@@ -17,15 +17,16 @@ import io.cucumber.java.en.When;
 
 public class TMTLoginPageSteps {
 	
+		// TODO Auto-generated constructor stub
+
 	TMTLoginPage loginpage = new TMTLoginPage(DriverFactory.getDriver());
 	
-	WebDriver driver;
 	private static String title;
 	
 	@Given("Login to TMT Portal")
 	public void Logintoportal() {
 		loginpage.SelectCity();
-//		loginpage.loginpagestep();
+		loginpage.loginpagestep();
 			
 	}
 	

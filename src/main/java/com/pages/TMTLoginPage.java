@@ -28,6 +28,7 @@ public class TMTLoginPage  {
 	// 3. page actions: features(behavior) of the page the form of methods:
 	
 	public void SelectCity() {
+	
 		driver.findElement(btnSelectcity).click();
 		driver.findElement(Selectcity).click();
 		
@@ -36,7 +37,7 @@ public class TMTLoginPage  {
 	public  void loginpagestep()
 	{
 		
-	driver.get("https://takemytickets.co.in/?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNlbHZhc21hcnQxODc5OEBnbWFpbC5jb20iLCJpYXQiOjE3MTc0MDM5NjEsImV4cCI6MTcxNzQwNzU2MX0.D--z3GZy1ALZ2cvK4JZIJQ695cLvGeY7miqroghJ7D0");
+	driver.get("https://takemytickets.co.in/?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNlbHZhbWFuaWF0aGl5YXBwYW5AZ21haWwuY29tIiwiaWF0IjoxNzE4ODU3NjYyLCJleHAiOjE3MTg4NjEyNjJ9.PBE4Y0qdiLrRlibuAQSuRkMyVOoaybCEbOrcGe2BXcY");
 	System.out.println("loginpage:ValidatedSuccessfully");
 	}
 	
