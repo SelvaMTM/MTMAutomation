@@ -1,10 +1,8 @@
 
-Feature: TakeMyTicketsLogin
+Feature: Primary Website Validation
  
  
  @Test
-Scenario: TakeMyTicketsLogin
-Given Login to TMT Portal
-When user gets the title of the page
-Then Page title should be "TakeMyTickets: Buy and sell concert tickets in India"
+Scenario: Primary Website validation
+Given Updating details on Whats your event about page
 

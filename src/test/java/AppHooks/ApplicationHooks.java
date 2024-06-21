@@ -44,30 +44,15 @@ public class ApplicationHooks {
 		String URLName = prop.getProperty("URL");			
 		driver.get(URLName);
 		
-//	driver.get("https://takemytickets.co.in/");
-//	ChromeOptions option=new ChromeOptions();
-//	option.setPageLoadStrategy(PageLoadStrategy.NONE);
-//	driver = new ChromeDriver(option);
-	
 
 		
 	}
 	
 
-	@After(order = 0)
-	public void quitBrowser() {
-		driver.quit();
-	}
+//	@After(order = 0)
+//	public void quitBrowser() {
+//		driver.quit();
+//	}
 
-//	@After(order = 1)
-//	public void tearDown(Scenario scenario) {
-//		if (scenario.isFailed()) {
-//			// take screenshot:
-//			String screenshotName = scenario.getName().replaceAll(" ", "_");
-//			byte[] sourcePath = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
-//			scenario.attach(sourcePath, "image/png", screenshotName);
-//
-//		}
-	//}
 
 }
